@@ -1,0 +1,5 @@
+<img width="120px" height="100px" [src]="t.photo" alt="photo"> {{t.libelle |titlecase}} 
+            <span class="badge badge-pill" [ngClass]="{'badge-dark':t.hautGamme==false,'badge-primary':t.hautGamme}">
+                Prix: {{t.prix}} DT
+                <i [ngClass]="{' fa fa-thumbs-up':t.hautGamme}"></i>
+            </span>
