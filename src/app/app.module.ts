@@ -7,6 +7,7 @@ import { AccueilComponent } from './composants/accueil/accueil.component';
 import { ListmaterielComponent } from './composants/informatique/listmateriel/listmateriel.component';
 import { MaterielComponent } from './composants/informatique/materiel/materiel.component';
 import { DetailmaterielComponent } from './composants/informatique/detailmateriel/detailmateriel.component';
+import { CommentComponent } from './composants/commentaires/comment/comment.component';
 
 
 @NgModule({
@@ -16,6 +17,7 @@ import { DetailmaterielComponent } from './composants/informatique/detailmaterie
     ListmaterielComponent,
     MaterielComponent,
     DetailmaterielComponent,
+    CommentComponent,
    
   ],
   imports: [

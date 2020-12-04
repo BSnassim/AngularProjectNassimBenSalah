@@ -1,4 +1,4 @@
-<h2>Détail du "{{materiel.libelle}}" d'Id:{{materiel.id}}</h2>
+<h2 class="pt-3">Détail du "{{materiel.libelle}}" d'Id:{{materiel.id}}</h2>
 <div class="row">
 <ul class="col-8" class="list-group">
     <li class="list-group-item">
@@ -20,11 +20,11 @@
         <input type="checkbox" [checked]="materiel.hautGamme">Haut de Gamme
     </li>
     <li class="list-group-item">
-        <button type="button" class="btn btn-primary">Détails</button>
+        <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#comment">Afficher les commentaires</button>
     </li>
 </ul>
-<aside class="col-4">
+<div class="col-4 collapse" id="comment">
     <h2>Liste des commentaires</h2>
-    
-</aside>
+    <nas-comment></nas-comment>
+</div>
 </div>
