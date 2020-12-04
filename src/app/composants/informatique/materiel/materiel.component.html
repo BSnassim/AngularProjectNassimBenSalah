@@ -1,5 +1,16 @@
-<img width="120px" height="100px" [src]="t.photo" alt="photo"> {{t.libelle |titlecase}} 
-            <span class="badge badge-pill" [ngClass]="{'badge-dark':t.hautGamme==false,'badge-primary':t.hautGamme}">
-                Prix: {{t.prix}} DT
-                <i [ngClass]="{' fa fa-thumbs-up':t.hautGamme}"></i>
-            </span>
+<div class="card text-center">
+    <div class="card-header">
+        {{t.libelle |titlecase}} 
+    </div>
+    <div class="card-body">
+        <img width="120px" height="100px" [src]="t.photo" alt="photo">
+        <br>
+        <span class="badge badge-pill" [ngClass]="{'badge-dark':t.hautGamme==false,'badge-primary':t.hautGamme}">
+            Prix: {{t.prix}} DT
+            <i [ngClass]="{' fa fa-thumbs-up':t.hautGamme}"></i>
+        </span>
+    </div>
+    <div class="card-footer text-muted">
+        <button type="button" class="btn btn-primary">Détails</button>
+    </div>
+</div>

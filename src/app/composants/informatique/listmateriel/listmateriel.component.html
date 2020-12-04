@@ -1,8 +1,12 @@
-<h1>Nos produits en informatique</h1>
-<ul>
-    <ng-container *ngFor="let t of materiels">
-        <li *ngIf="t.quantite > 0">
-            <nas-materiel [materiel]="t"></nas-materiel>
-        </li>
-    </ng-container>
-</ul>
+<h1 class="text-center pt-3">Nos produits en informatique</h1>
+<div class="container">
+    <div class="row">
+        <ng-container *ngFor="let t of materiels">
+            <div class="col-4 pt-3" *ngIf="t.quantite > 0">
+                <nas-materiel [materiel]="t"></nas-materiel>
+            </div>
+        </ng-container>
+    
+    </div>
+</div>
+   
