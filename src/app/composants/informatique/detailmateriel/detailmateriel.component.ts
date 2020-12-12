@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Materiel } from 'src/app/models/materiel';
 
 @Component({
   selector: 'nas-detailmateriel',
