@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 import { Materiel } from 'src/app/models/materiel';
 import { MaterielService } from 'src/app/services/materiel.service';
 
@@ -10,13 +11,15 @@ import { MaterielService } from 'src/app/services/materiel.service';
 export class DetailmaterielComponent implements OnInit {
   afficher:boolean=false;
   materiel: Materiel;
+  ide:string;
   onClick(){
     this.afficher= !this.afficher;
   }
-  constructor(private materielService:MaterielService) { }
+  constructor(private materielService:MaterielService,private activatedRoute:ActivatedRoute) { }
 
   ngOnInit(): void {
-    this.materiel = this.materielService.getMaterielsById("1");
+    this.ide = this.activatedRoute.snapshot.params['id'];
+    this.materiel = this.materielService.getMaterielsById(Number(this.ide)-1);
   }
 
 }
