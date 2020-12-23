@@ -9,7 +9,7 @@ import { MaterielService } from 'src/app/services/materiel.service';
 })
 export class DetailmaterielComponent implements OnInit {
   afficher:boolean=false;
-  materiel:Materiel[];
+  materiel: Materiel;
   onClick(){
     this.afficher= !this.afficher;
   }
