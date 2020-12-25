@@ -19,7 +19,7 @@ export class DetailmaterielComponent implements OnInit {
 
   ngOnInit(): void {
     this.ide = this.activatedRoute.snapshot.params['id'];
-    this.materiel = this.materielService.getMaterielsById(Number(this.ide)-1);
+    this.materiel = this.materielService.getMaterielsById(this.ide);
   }
 
 }
